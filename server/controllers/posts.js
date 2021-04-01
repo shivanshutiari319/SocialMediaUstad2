@@ -18,7 +18,6 @@ const getpost =async (req,res)=>{
 // res.send("getpost successfull");
 
 }
-
 const createpost = async (req,res)=>{
 const post =req.body;
 const newPost =new postmessage(post);

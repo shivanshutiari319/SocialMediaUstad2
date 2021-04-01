@@ -5,8 +5,10 @@ const PostRoute = require('./routes/posts.js')
 require('dotenv').config();
 const cors = require('cors')
 const app=express();
-app.use('/post',PostRoute)
+
+
 app.use(cors());
+app.use('/post',PostRoute)
 app.get('/',(req,res)=>{
     res.send("hello shivanshu");
 })
