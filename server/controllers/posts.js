@@ -18,7 +18,7 @@ const getpost =async (req,res)=>{
 // res.send("getpost successfull");
 
 }
-const createpost = async (req,res)=>{
+const createPost = async (req,res)=>{
 const post =req.body;
 const newPost =new postmessage(post);
 try {
@@ -36,5 +36,5 @@ try {
 
 }
 
-module.exports = {getpost,createpost}
+module.exports = {getpost,createPost}
 // module.exports = {createpost}
